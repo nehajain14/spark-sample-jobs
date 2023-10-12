@@ -34,5 +34,5 @@ prep_step2 = CDEJobRunOperator(
     dag=example_dag,
     job_name='spark-scala-pi-job'
 )
-
+print("Hi! Airflow job ")
 ingest_step1 >> prep_step2
