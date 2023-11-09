@@ -25,7 +25,7 @@ python_1 = PythonOperator(
 )
 ​
 def function_552dd2f8():
-    print("Ending a dag, shubham is here")
+    print("Ending a dag, user is here")
 ​
 python_2 = PythonOperator(
     python_callable=function_552dd2f8,
