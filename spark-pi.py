@@ -3,7 +3,8 @@ import random
 import pandas as pd
 import pyspark
 
-sc = pyspark.SparkContext('local[*]')
+spark = SparkSession.builder.appName("PiCalculation").getOrCreate()
+sc = spark.sparkContext
 samples = 2000
 
 
