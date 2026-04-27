@@ -4,7 +4,7 @@ import pandas as pd
 import sys
 
 # Initialize Spark
-spark = SparkSession.builder.appName("ComplexShuffleTest").get_all_configs().get_or_create()
+spark = SparkSession.builder.appName("ComplexShuffleTest").getOrCreate()
 
 # Print Environment Info for verification
 print(f"Python Path: {sys.executable}")
